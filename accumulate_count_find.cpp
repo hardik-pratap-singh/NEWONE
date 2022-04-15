@@ -9,14 +9,9 @@ int main()
 {
 	ll n  ;
 	cin >> n ; 
-	// while(t--)
 	vi v(n) ;
-	for (int i = 0; i < n; ++i)
-	{
-		cin >> v[i] ; 
-	}
+	for (int i = 0; i < n; ++i) cin >> v[i] ;
 	int sum = 0 ; 
-
 	sum  = accumulate(v.begin(),v.end(), sum) ; 
 	cout << sum << endl ;
 	int ct ; 
@@ -27,14 +22,6 @@ int main()
 	int l = s.size() ; 
 	int ct1 ;
 	int pr = 0 ; 
-	// ct1 = s.find("ab") ; 
 	ct1 = s.find('a') ; 
-	//above function doesn't works for strings, 
-	//only for first position of the characters
-
-
-
-
-
 	return 0;
 }
